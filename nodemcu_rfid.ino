@@ -149,8 +149,7 @@ void loop()
                   }
     client.print(" ");      //SPACE BEFORE HTTP/1.1
     client.print("HTTP/1.1");
-    client.print("Host: ");
-     client.println(server);
+    client.println();
     client.println("Host: YOUR SERVER IP");//eg: 192.168.0.222
     client.println("Connection: close");
     client.println();
