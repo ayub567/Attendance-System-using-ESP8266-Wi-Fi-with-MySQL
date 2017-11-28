@@ -7,8 +7,8 @@ class rfid{
  }
  
  function connect(){
-  $this->link = mysqli_connect('localhost','root','Deligence@1') or die('Cannot connect to the DB');
-  mysqli_select_db($this->link,'rfidesp') or die('Cannot select the DB');
+  $this->link = mysqli_connect('localhost','database_username','DB_PASSWARD') or die('Cannot connect to the DB');
+  mysqli_select_db($this->link,'DATABASE_NAME') or die('Cannot select the DB');
  }
  
  function storeInDB($allow, $id){
